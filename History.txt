@@ -1,0 +1,35 @@
+== 1.0.1 / 2010-01-21
+
+   * Fixed warnings 
+   * Added better exception handling for badly formatted output data
+
+== 0.11.0 / 2009-08-04
+
+   * Removed useless files 
+   * Corrected version number 
+
+== 1.0.1 / 2011-02-09
+
+   * Added ability to specify file format in Ruby with Range class (see example.rb in /test.)
+   
+== 1.2.6
+
+   * NHGIS had been using this version for a long time until the Ruby 1.9 conversion
+     and the related work to get character-encoding to function properly.
+
+== 1.4.0
+
+   * support for Ruby 1.9 character encoding
+   * Note: I saw that Colin had a series of 1.3 "releases" on his computer, but apparently
+     not released anywhere; so I jumped ahead in the version numbering to 1.4
+   * Deal with Latin-1 character encoding when using String#pack, force to Latin-1 since
+     that's the only encoding that makes sense for fixed width files (one byte per char).
+
+== 1.4.1
+
+   * conditionally use force_encoding, if method available
+
+
+== 1.5.1
+
+  * Add set_random() and get_random_record(record_number) for random access mode. See examples.rb in test directory for example code.
