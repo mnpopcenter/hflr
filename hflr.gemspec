@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{hflr}
-  s.version = "1.5.4"
+  s.version = "1.6.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Colin Davis", "Wade Stebbings"]
@@ -15,9 +15,9 @@ than one type of record.
 Install with 'gem install hflr'
 
 See the tests and examples bundled with this gem.}
-  s.email = %q{colin.c.davis@gmail.com}
-  s.extra_rdoc_files = ["History.txt", "README.txt"]
-  s.files = ["History.txt", "README.txt",  "hflr.gemspec", 
+  s.email = %q{ccd@umn.edu}
+  s.extra_rdoc_files = ["History.txt", "README.md"]
+  s.files = ["History.txt", "README.md",  "LICENSE.txt", "NOTICE.txt", "hflr.gemspec", 
   "lib/hflr.rb", "lib/hflr/fl_record_file.rb", "lib/hflr/hflr.rb", "lib/hflr/record_template.rb", 
   "test/customer_orders.dat", "test/customers.dat", "test/examples.rb", "test/flrfile_test.rb","test/record_template_test.rb", 
   "test/sample.dat", "test/sample_latin1.dat", "test/sample2_out.dat", "test/sample_activities.dat", "test/sample_out.dat", "test/test_helper.rb", "test/test_hflr.rb"]
