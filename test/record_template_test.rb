@@ -76,11 +76,11 @@ class RecordTemplateTest < Test::Unit::TestCase
     household_layout = @vars[:household]
     
     pattern = HFLR::RecordTemplate.get_pattern(household_layout)
-    assert_equal "@1A1",pattern[0..3]
+    assert_equal "[\"@1A1",pattern[0..5]
     
     # Adjust the location ('@') leftward (the metadata refers to the 0th column as column 1.)
     pattern = HFLR::RecordTemplate.get_pattern(household_layout,1)
-    assert_equal "@0A1",pattern[0..3]
+    assert_equal "[\"@0A1",pattern[0..5]
     
     vars_in_pattern = pattern.scan("A").size 
     assert_equal household_layout.size, vars_in_pattern
